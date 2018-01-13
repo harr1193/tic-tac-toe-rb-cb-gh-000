@@ -95,5 +95,6 @@ def play(board)
     turn(board)
   end
 
-  puts "Congrats player #{player}"
+  puts "Congrats player #{player}" if won?(board)
+  puts "Game was a draw" if draw?(board)
 end
