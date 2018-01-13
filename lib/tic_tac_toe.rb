@@ -41,7 +41,7 @@ end
 
 def turn_count(board)
   count = 0
-  board.each {|pos| count += 1 if position_taken?(board, pos)}
+  board.each {|pos| (count += 1 if position_taken?(board, pos)) }
   return count
 end
 
