@@ -40,12 +40,6 @@ def turn(board)
   if valid_move(board, index)
 end
 
-def turn_count(board)
-  count = 0
-  board.each {|pos| count += 1 if position_taken?(board, pos)}
-  return count
-end
-
 board = ["X", " ", " ", " ", " ", " ", " ", " " ," "]
 
 display_board(board)
