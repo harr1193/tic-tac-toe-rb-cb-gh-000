@@ -46,5 +46,7 @@ def turn_count(board)
 end
 
 board = ["X", " ", " ", " ", " ", " ", " ", " " ," "]
-
+count = 0
+board.each {|pos| (count += 1 if position_taken?(board, pos)) }
+puts count
 display_board(board)
