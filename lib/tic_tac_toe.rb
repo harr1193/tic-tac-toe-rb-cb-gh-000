@@ -45,6 +45,11 @@ def turn_count(board)
   return count
 end
 
+def current_player(board)
+  count = turn_count(board)
+  count % 2 == 0 ? "X" : "O"
+end
+
 board = ["X", " ", " ", " ", " ", " ", " ", " " ," "]
 
 display_board(board)
