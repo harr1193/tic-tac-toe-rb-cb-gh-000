@@ -94,4 +94,6 @@ def play(board)
   until over?(board)
     turn(board)
   end
+
+  puts "Congrats player #{player}"
 end
