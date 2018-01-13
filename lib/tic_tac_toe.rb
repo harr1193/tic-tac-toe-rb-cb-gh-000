@@ -38,7 +38,7 @@ def turn(board)
   input = gets.strip
   index = input_to_index(input)
   player = current_player(board)
-  valid_move?(board, index) ? (move(board, index); display_board(board)) : turn(board)
+  valid_move?(board, index) ? (move(board, index, player); display_board(board)) : turn(board)
 end
 
 def turn_count(board)
