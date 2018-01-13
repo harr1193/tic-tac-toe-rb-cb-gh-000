@@ -89,3 +89,7 @@ def winner(board)
   winner = won?(board)
   won?(board) ? board[winner[0]] : nil
 end
+
+def play(board)
+  until over?(board)
+end
